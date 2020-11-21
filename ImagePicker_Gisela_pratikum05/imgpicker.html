@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Image Picker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function pilih(){
+			let list_style = document.getElementById('style');
+			let idx = list_style.selectedIndex;
+			let area_gambar = document.getElementById ("gambar");
+			area_gambar.src = "images/" + list_style[idx].value + ".jpg";
+			alert("style yang kamu pilih ini adalah " + list_style[idx].value + ".jpg");
+		}
+	</script>
+</head>
+<body>
+	<div class="img">
+		<h1><b>Choose Your Style..</b></h1>
+		<hr>
+		<form id="frm1">
+			pilih style <select id="style"  onchange="pilih()">
+				<option value="vintage"> Vintage Style</option>
+				<option value="bohemian"> Bohemian Style </option>
+				<option value="modestwear"> ModestWear Style </option>
+				<option value="chic"> Chic Style</option>
+				<option value="klasik"> Klasik Style </option>
+				<option value="romantis"> Romantis Style </option>
+				<option value="feminim"> Feminim Style </option>
+			</select>
+		</form>
+		<br></br>
+		<img src="images/vintage.jpg" alt="gambar fashion" id="gambar" border="1px">
+	</div>
+</body>
+</html>

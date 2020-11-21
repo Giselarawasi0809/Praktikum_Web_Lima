@@ -1,0 +1,13 @@
+body{
+	background-image: url(images/cover2.jpg);
+	background-size: cover;
+}
+
+.img{
+	text-align: center;
+	background-color: rgb(169, 169, 169,0.7);
+	width: 600px;
+	margin:220px auto;
+	padding: 15px;
+	text-align: center;
+}
